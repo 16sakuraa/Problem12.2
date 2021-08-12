@@ -6,13 +6,13 @@
 int main()
 {
 	int a[3], max = -1000000, i, j;
-	scanf_s("%d %d %d", a[0], a[1], a[2]);
+	scanf_s("%d %d %d",&a[0],&a[1],&a[2]);
 
 	for (i = 0; i < 3; i++)
 	{
 		for (j = 0; j < 3; j++)
 		{
-			if (a[i] + a[j] >= max && a[i] != a[j])
+			if (a[i] + a[j] >= max && i!=j)
 			{
 				max = a[i] + a[j];
 			}
